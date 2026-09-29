@@ -1,0 +1,68 @@
+{
+  "repo": "picokit-04-lcd-hello",
+  "eyebrow": "PICOKIT // LESSON 04",
+  "title": "PICOKIT // LCD HELLO",
+  "subtitle": "1602 I2C LCD TEXT AND AUTHENTICATED HEARTBEAT",
+  "accent": "#247FFF",
+  "dim": "#164E9E",
+  "white": "#D5E4FF",
+  "cyan": "#7FD8E0",
+  "bg": "#020811",
+  "bg_edge": "#000205",
+  "icon": "lcd",
+  "panel_status": "LCD 16x2  ·  ADDR 0x27  ·  AEAD :ON",
+  "chips": [
+    {
+      "label": "LCD",
+      "value": "0x27"
+    },
+    {
+      "label": "ROW",
+      "value": "2"
+    },
+    {
+      "label": "KEY",
+      "value": "argon2id"
+    },
+    {
+      "label": "RADIO",
+      "value": "-33 dBm"
+    }
+  ],
+  "terminal": [
+    "$ gateway listen /dev/cu.usbserial-A50285BI",
+    "[*] node 00004  seq 18  HEARTBEAT  AEAD ok",
+    "[*] anti-replay window ok  counter 18",
+    "[+] lcd hello world  onboard blink",
+    "[+] ack sent  rssi -33  snr 9.0"
+  ],
+  "categories": [
+    "LCD",
+    "I2C",
+    "SECURE",
+    "LINK"
+  ],
+  "cards": [
+    {
+      "tag": "ROW-01",
+      "label": "line 1",
+      "value": "16 col"
+    },
+    {
+      "tag": "ROW-02",
+      "label": "line 2",
+      "value": "16 col"
+    },
+    {
+      "tag": "BUS-01",
+      "label": "i2c1",
+      "value": "100 kHz"
+    }
+  ],
+  "footer": [
+    "1 NODE  ·  1 GATEWAY  ·  2 WAY LORA  ·  NO PLAINTEXT",
+    "PICOKIT SERIES  ·  OUTPUT  ·  INPUT  ·  RADIO  ==[ LCD ]=="
+  ],
+  "layout": "stat",
+  "stat": "0x27"
+}
